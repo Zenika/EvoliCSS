@@ -1,0 +1,12 @@
+#root {
+  display: flex;
+  height: 100%;
+
+  .ct-navbar {
+    flex-basis: 200px;
+  }
+
+  .ct-main {
+    flex: 1;
+  }
+}
