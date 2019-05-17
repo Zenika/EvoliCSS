@@ -12,4 +12,5 @@ npm run start
 ```
 npm run lib:build
 npm run lib:build:compressed
+npm run lib:watch
 ```
