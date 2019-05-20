@@ -26,7 +26,7 @@ const Sandbox = ({ children, js, css }) => (
       defaultValue: js || '',
       mode: 'javascript'
     }}
-    styleEditor={{
+    stylesheetEditor={{
       defaultValue: css || '',
       mode: 'css'
     }}
