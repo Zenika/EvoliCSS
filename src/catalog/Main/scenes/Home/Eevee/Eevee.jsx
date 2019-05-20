@@ -3,61 +3,63 @@ import React from 'react'
 import './Eevee.scss'
 
 const Eevee = () => (
-  <div class="eevee">
-    <div class="body">
-      <div class="head">
-        <div class="ears">
-          <div class="ear">
-            <div class="lobe" />
-          </div>
-          <div class="ear">
-            <div class="lobe" />
-          </div>
-        </div>
-        <div class="face">
-          <div class="eyes">
-            <div class="eye">
-              <div class="eyelid" />
+  <div>
+    <div className="eevee">
+      <div className="body">
+        <div className="head">
+          <div className="ears">
+            <div className="ear">
+              <div className="lobe" />
             </div>
-            <div class="eye">
-              <div class="eyelid" />
+            <div className="ear">
+              <div className="lobe" />
             </div>
           </div>
-          <div class="nose" />
-          <div class="mouth" />
+          <div className="face">
+            <div className="eyes">
+              <div className="eye">
+                <div className="eyelid" />
+              </div>
+              <div className="eye">
+                <div className="eyelid" />
+              </div>
+            </div>
+            <div className="nose" />
+            <div className="mouth" />
+          </div>
         </div>
-      </div>
-      <div class="chest">
-        <div class="fur">
-          <div class="patch" />
+        <div className="chest">
+          <div className="fur">
+            <div className="patch" />
+          </div>
+          <div className="fur">
+            <div className="patch" />
+          </div>
+          <div className="fur">
+            <div className="patch" />
+          </div>
         </div>
-        <div class="fur">
-          <div class="patch" />
+        <div className="legs">
+          <div className="leg">
+            <div className="inner-leg" />
+          </div>
+          <div className="leg">
+            <div className="inner-leg" />
+          </div>
+          <div className="leg">
+            <div className="inner-leg" />
+          </div>
+          <div className="leg">
+            <div className="inner-leg" />
+          </div>
         </div>
-        <div class="fur">
-          <div class="patch" />
-        </div>
-      </div>
-      <div class="legs">
-        <div class="leg">
-          <div class="inner-leg" />
-        </div>
-        <div class="leg">
-          <div class="inner-leg" />
-        </div>
-        <div class="leg">
-          <div class="inner-leg" />
-        </div>
-        <div class="leg">
-          <div class="inner-leg" />
-        </div>
-      </div>
-      <div class="tail">
-        <div class="tail">
-          <div class="tail">
-            <div class="tail">
-              <div class="tail">
-                <div class="tail -end" />
+        <div className="tail">
+          <div className="tail">
+            <div className="tail">
+              <div className="tail">
+                <div className="tail">
+                  <div className="tail -end" />
+                </div>
               </div>
             </div>
           </div>

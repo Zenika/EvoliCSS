@@ -1,5 +1,11 @@
 import React from 'react'
 
-const Buttons = () => <h2>Buttons</h2>
+import Sandbox from 'catalog/components/Sandbox'
+
+const Buttons = () => (
+  <Sandbox>
+    <button className="btn-primary">Hello</button>
+  </Sandbox>
+)
 
 export default Buttons

@@ -1,1 +1,40 @@
-$zenika-red: red;
+$zenika-red: #b51432;
+$zenika-grey-light: #f2f2f2;
+$zenika-grey-medium: #d2d6d8;
+$zenika-grey-dark: #b5b5b5;
+$zenika-black-light: #4c4c4c;
+
+.red {
+  color: $zenika-red;
+}
+.grey-light {
+  color: $zenika-grey-light;
+}
+.grey-medium {
+  color: $zenika-grey-medium;
+}
+.grey-dark {
+  color: $zenika-grey-dark;
+}
+.black-light {
+  color: $zenika-black-light;
+}
+
+.background-red {
+  background-color: $zenika-red;
+  color: white;
+}
+.background-grey-light {
+  background-color: $zenika-grey-light;
+}
+.background-grey-medium {
+  background-color: $zenika-grey-medium;
+}
+.background-grey-dark {
+  background-color: $zenika-grey-dark;
+  color: white;
+}
+.background-black-light {
+  background-color: $zenika-black-light;
+  color: white;
+}
