@@ -11,25 +11,31 @@ const Colors = () => (
             justify-content: space-between;
             flex-flow: row wrap;
         }
-        .container .shape {
+        .container > * {
             margin: 1em;
             margin-left: 4em;
             margin-right: 4em;
             display: flex;
             align-items: center;
             justify-content: center;
-        }`}>
+            height: 10em;
+            width: 10em;
+        }
+        .container > *:nth-child(-n+5)  {
+            border-radius: 50%;
+        }
+        `}>
             <div className="container">
-                <div className="shape circle background-red"><p>#B51432</p></div>
-                <div className="shape circle background-grey-light"><p>#B51432</p></div>
-                <div className="shape circle background-grey-medium"><p>#B51432</p></div>
-                <div className="shape circle background-grey-dark"><p>#B51432</p></div>
-                <div className="shape circle background-black-light"><p>#B51432</p></div>
-                <div className="shape square background-red"><p>#B51432</p></div>
-                <div className="shape square background-grey-light"><p>#B51432</p></div>
-                <div className="shape square background-grey-medium"><p>#B51432</p></div>
-                <div className="shape square background-grey-dark"><p>#B51432</p></div>
-                <div className="shape square background-black-light"><p>#B51432</p></div>
+                <div className="background-red"><p>#B51432</p></div>
+                <div className="background-grey-light"><p>#B51432</p></div>
+                <div className="background-grey-medium"><p>#B51432</p></div>
+                <div className="background-grey-dark"><p>#B51432</p></div>
+                <div className="background-black-light"><p>#B51432</p></div>
+                <div className="background-red"><p>#B51432</p></div>
+                <div className="background-grey-light"><p>#B51432</p></div>
+                <div className="background-grey-medium"><p>#B51432</p></div>
+                <div className="background-grey-dark"><p>#B51432</p></div>
+                <div className="background-black-light"><p>#B51432</p></div>
             </div>
         </Sandbox>
     </div>
