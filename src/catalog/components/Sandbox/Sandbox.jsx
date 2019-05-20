@@ -37,7 +37,7 @@ const Sandbox = ({ children, js, css }) => (
       cssLink.type = "text/css"
       document.head.appendChild(cssLink)
     `}
-    theme="solarized_dark"
+    theme="tomorrow"
   />
 )
 

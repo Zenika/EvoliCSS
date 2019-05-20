@@ -1,21 +1,21 @@
 @import './root.scss';
 @import './layout.scss';
 
-.container {
-    display: flex;
-    width: 100%;
+#root {
+  display: flex;
+  width: 100%;
 }
 
 nav {
-    position: fixed;
-    z-index: 3;
-    width: 15%;
-    height: 100%;
+  position: fixed;
+  z-index: 3;
+  width: 15%;
+  height: 100%;
 }
 
 main {
-    position: absolute;
-    right: 0;
-    width: 85%;
-    height: 100%;
+  position: absolute;
+  right: 0;
+  width: 85%;
+  height: 100%;
 }

@@ -9,10 +9,8 @@ import './styles/index.scss'
 
 const App = () => (
   <Router>
-    <div className='container'>
-      <Sidebar/>
-      <Main/>
-    </div>
+    <Sidebar />
+    <Main />
   </Router>
 )
 
