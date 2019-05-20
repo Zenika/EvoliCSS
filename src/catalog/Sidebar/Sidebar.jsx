@@ -16,16 +16,19 @@ const Sidebar = () => (
           <Link to="/getting-started">Getting Started</Link>
         </li>
         <li>
+          <Link to="/style-guide">Style guide</Link>
+        </li>
+        <li>
           <Link to="/components">Components</Link>
           <ul className="list">
+            <li>
+              <Link to="/components/colors">Colors</Link>
+            </li>
             <li>
               <Link to="/components/buttons">Buttons</Link>
             </li>
             <li>
               <Link to="/components/titles">Titles</Link>
-            </li>
-            <li>
-              <Link to="/components/colors">Colors</Link>
             </li>
             <li>
               <Link to="/components/lists">Lists</Link>

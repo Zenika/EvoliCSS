@@ -1,0 +1,21 @@
+.btn-primary {
+  border: 1px solid #b51432;
+  background-color: #b51432;
+  color: white;
+  border-radius: 2em;
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: Lato !important; }
+
+.is-title {
+  padding: 0;
+  margin: 0; }
+  .is-title.is-1 {
+    font-size: 2rem; }
+  .is-title.is-2 {
+    font-size: 1.5rem; }
+  .is-title.is-3 {
+    font-size: 1.2rem; }
+
+.list {
+  padding: 1rem; }
