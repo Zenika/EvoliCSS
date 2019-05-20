@@ -8,7 +8,7 @@ const Sandbox = ({ children, js, css }) => (
     displayMode="horizontal-split"
     executeOnCodeChange
     executeOnCodeChangeDebounce={1000}
-    horizontalSplitOffset={20}
+    horizontalSplitOffset={30}
     permissions={[
       'allow-forms',
       'allow-pointer-lock',

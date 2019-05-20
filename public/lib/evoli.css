@@ -1,3 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+.red {
+  color: #b51432; }
+
+.grey-light {
+  color: #f2f2f2; }
+
+.grey-medium {
+  color: #d2d6d8; }
+
+.grey-dark {
+  color: #b5b5b5; }
+
+.black-light {
+  color: #4c4c4c; }
+
+.background-red {
+  background-color: #b51432;
+  color: white; }
+
+.background-grey-light {
+  background-color: #f2f2f2; }
+
+.background-grey-medium {
+  background-color: #d2d6d8; }
+
+.background-grey-dark {
+  background-color: #b5b5b5;
+  color: white; }
+
+.background-black-light {
+  background-color: #4c4c4c;
+  color: white; }
+
+.red {
+  color: #b51432; }
+
+.grey-light {
+  color: #f2f2f2; }
+
+.grey-medium {
+  color: #d2d6d8; }
+
+.grey-dark {
+  color: #b5b5b5; }
+
+.black-light {
+  color: #4c4c4c; }
+
+.background-red {
+  background-color: #b51432;
+  color: white; }
+
+.background-grey-light {
+  background-color: #f2f2f2; }
+
+.background-grey-medium {
+  background-color: #d2d6d8; }
+
+.background-grey-dark {
+  background-color: #b5b5b5;
+  color: white; }
+
+.background-black-light {
+  background-color: #4c4c4c;
+  color: white; }
+
+html {
+  font-family: Lato, Arial, Helvetica, sans-serif; }
+
 .btn-primary {
   border: 1px solid #b51432;
   background-color: #b51432;
@@ -19,3 +89,9 @@
 
 .list {
   padding: 1rem; }
+
+.shape {
+  height: 10em;
+  width: 10em; }
+  .shape.circle {
+    border-radius: 50%; }

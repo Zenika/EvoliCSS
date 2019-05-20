@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 $zenika-font: Lato;
 
 $zenika-small: 0.5em;
 $zenika-normal: 1em;
 $zenika-large: 1.5em;
+
+html {
+    font-family: $zenika-font, Arial, Helvetica, sans-serif;
+}
