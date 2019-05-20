@@ -33,31 +33,31 @@ const Colors = () => (
           <p>#B51432</p>
         </div>
         <div className="background-grey-light">
-          <p>#B51432</p>
+          <p>#F2F2F2</p>
         </div>
         <div className="background-grey-medium">
-          <p>#B51432</p>
+          <p>#D2D6D8</p>
         </div>
         <div className="background-grey-dark">
-          <p>#B51432</p>
+          <p>#B5B5B5</p>
         </div>
         <div className="background-black-light">
-          <p>#B51432</p>
+          <p>#4C4C4C</p>
         </div>
         <div className="background-red">
           <p>#B51432</p>
         </div>
         <div className="background-grey-light">
-          <p>#B51432</p>
+          <p>#F2F2F2</p>
         </div>
         <div className="background-grey-medium">
-          <p>#B51432</p>
+          <p>#D2D6D8</p>
         </div>
         <div className="background-grey-dark">
-          <p>#B51432</p>
+          <p>#B5B5B5</p>
         </div>
         <div className="background-black-light">
-          <p>#B51432</p>
+          <p>#4C4C4C</p>
         </div>
       </div>
     </Sandbox>
