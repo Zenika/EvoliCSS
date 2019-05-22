@@ -1,40 +1,100 @@
-$zenika-red: #b51432;
-$zenika-grey-light: #f2f2f2;
-$zenika-grey-medium: #d2d6d8;
-$zenika-grey-dark: #b5b5b5;
-$zenika-black-light: #4c4c4c;
+$primary: #b51432;
+$link: #1495b5;
+$info: #3779db;
+$success: #14b564;
+$warning: #eb5d4a;
+$danger: #f00808;
 
-.red {
-  color: $zenika-red;
+$grey-lighter: #f2f2f2;
+$grey-light: #d2d6d8;
+$grey: #b5b5b5;
+$black-light: #4c4c4c;
+
+$black: #000000;
+$white: #ffffff;
+
+.is-primary {
+  color: $primary;
 }
-.grey-light {
-  color: $zenika-grey-light;
+.is-link {
+  color: $link;
 }
-.grey-medium {
-  color: $zenika-grey-medium;
+.is-info {
+  color: $info;
 }
-.grey-dark {
-  color: $zenika-grey-dark;
+.is-success {
+  color: $success;
 }
-.black-light {
-  color: $zenika-black-light;
+.is-warning {
+  color: $warning;
+}
+.is-danger {
+  color: $danger;
+}
+.is-grey-lighter {
+  color: $grey-lighter;
+}
+.is-grey-light {
+  color: $grey-light;
+}
+.is-grey-dark {
+  color: $grey;
+}
+.is-black-light {
+  color: $black-light;
+}
+.is-black {
+  color: $black;
+}
+.is-white {
+  color: $white;
 }
 
-.background-red {
-  background-color: $zenika-red;
-  color: white;
+.is-background-primary {
+  background-color: $primary;
+  color: $white;
 }
-.background-grey-light {
-  background-color: $zenika-grey-light;
+.is-background-link {
+  background-color: $link;
+  color: $white;
 }
-.background-grey-medium {
-  background-color: $zenika-grey-medium;
+.is-background-info {
+  background-color: $info;
+  color: $white;
 }
-.background-grey-dark {
-  background-color: $zenika-grey-dark;
-  color: white;
+.is-background-success {
+  background-color: $success;
+  color: $white;
 }
-.background-black-light {
-  background-color: $zenika-black-light;
-  color: white;
+.is-background-warning {
+  background-color: $warning;
+  color: $white;
+}
+.is-background-danger {
+  background-color: $danger;
+  color: $white;
+}
+.is-background-grey-light {
+  background-color: $grey-light;
+  color: $black;
+}
+.is-background-grey-lighter {
+  background-color: $grey-lighter;
+  color: $black;
+}
+.is-background-grey {
+  background-color: $grey;
+  color: $white;
+}
+.is-background-black-light {
+  background-color: $black-light;
+  color: $white;
+}
+.is-background-black {
+  background-color: $black;
+  color: $white;
+}
+.is-background-white {
+  background-color: $white;
+  color: $black;
 }

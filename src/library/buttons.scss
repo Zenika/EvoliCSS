@@ -1,12 +1,34 @@
-@import './colors.scss';
-@import './font.scss';
+// @import './colors.scss';
+// @import './font.scss';
 
-.btn-primary {
-  border: 1px solid $zenika-red;
-  background-color: $zenika-red;
-  color: white;
-  border-radius: 2em;
-  padding: 0.5em;
-  font-size: $zenika-normal;
-  font-family: $zenika-font !important;
-}
+// .btn.primary {
+//   border: 1px solid $zenika-red;
+//   background-color: $zenika-red;
+//   color: white;
+//   border-radius: 2em;
+//   padding: 0.5em;
+//   font-size: $zenika-normal;
+//   font-family: $zenika-font !important;
+
+//   &:hover {
+//     box-shadow: 0.2em 0.2em 0.5em 0.1em $zenika-grey-medium;
+//   }
+//   &:active {
+//     box-shadow: 0.4em 0.4em 0.5em 0.1em $zenika-grey-dark;
+//   }
+// }
+
+// .btn.primary.disabled {
+//   border: 1px solid $zenika-grey-medium;
+//   background-color: $zenika-grey-medium;
+//   color: black;
+//   border-radius: 2em;
+//   padding: 0.5em;
+//   font-size: $zenika-normal;
+//   font-family: $zenika-font !important;
+
+//   &:hover {
+//   }
+//   &:focus {
+//   }
+// }

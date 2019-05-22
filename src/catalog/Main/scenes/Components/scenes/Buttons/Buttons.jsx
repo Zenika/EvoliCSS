@@ -3,9 +3,11 @@ import React from 'react'
 import Sandbox from 'catalog/components/Sandbox'
 
 const Buttons = () => (
-  <Sandbox>
-    <button className="btn-primary">Hello</button>
-  </Sandbox>
+  <h2>Buttons</h2>
+  // <Sandbox>
+  //   <button className="btn primary">Primary button</button>
+  //   <button className="btn primary disabled">Primary button disabled</button>
+  // </Sandbox>
 )
 
 export default Buttons
