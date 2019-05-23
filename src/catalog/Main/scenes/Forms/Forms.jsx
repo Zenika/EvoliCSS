@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Iframe from 'catalog/components/Iframe'
+import Figma from 'catalog/components/Figma'
 
 import Checkbox from './scenes/Checkbox'
 import File from './scenes/File'
@@ -13,10 +13,7 @@ import Textarea from './scenes/Textarea'
 const Forms = ({ match }) => (
   <>
     <h1>Forms</h1>
-    <Iframe
-      id="forms"
-      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFNTIGdJacxKH3DHRkomttIFv%2FEvoliCSS%3Fnode-id%3D4%253A96"
-    />
+    <Figma nodeId="4%253A96" />
     <Route path={match.path + '/checkbox'} component={Checkbox} />
     <Route path={match.path + '/file'} component={File} />
     <Route path={match.path + '/general'} component={General} />

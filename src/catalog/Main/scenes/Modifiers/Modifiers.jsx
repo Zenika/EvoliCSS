@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Iframe from 'catalog/components/Iframe'
+import Figma from 'catalog/components/Figma'
 
 import ColorHelpers from './scenes/Color-helpers'
 import Helpers from './scenes/Helpers'
@@ -11,10 +11,7 @@ import TypographyHelpers from './scenes/Typography-helpers'
 const Modifiers = ({ match }) => (
   <>
     <h1>Modifiers</h1>
-    <Iframe
-      id="modifiers"
-      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFNTIGdJacxKH3DHRkomttIFv%2FEvoliCSS%3Fnode-id%3D4%253A91"
-    />
+    <Figma nodeId="4%253A91" />
     <Route path={match.path + '/color-helpers'} component={ColorHelpers} />
     <Route path={match.path + '/helpers'} component={Helpers} />
     <Route path={match.path + '/responsive-helpers'} component={ResponsiveHelpers} />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Iframe from 'catalog/components/Iframe'
+import Figma from 'catalog/components/Figma'
 
 import Box from './scenes/Box'
 import Button from './scenes/Button'
@@ -17,10 +17,7 @@ import Title from './scenes/Title'
 const Element = ({ match }) => (
   <>
     <h1>Element</h1>
-    <Iframe
-      id="element"
-      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFNTIGdJacxKH3DHRkomttIFv%2FEvoliCSS%3Fnode-id%3D4%253A94"
-    />
+    <Figma nodeId="4%253A94" />
     <Route path={match.path + '/box'} component={Box} />
     <Route path={match.path + '/button'} component={Button} />
     <Route path={match.path + '/content'} component={Content} />
