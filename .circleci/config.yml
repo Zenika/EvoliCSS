@@ -1,0 +1,93 @@
+references:
+  workspace_root: &workspace_root /home/circleci/my-workspace
+
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root
+
+version: 2
+jobs:
+  install:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+
+      - run: |
+          npm ci
+
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - node_modules/
+
+  lint:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+
+      - run: |
+          npm run lint
+          npm run prettier:check
+
+  build:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+
+      - run: |
+          npm run build
+
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - build/
+
+  lib/build:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+
+      - run: |
+          npm run lib:build
+          npm run lin:compressed
+
+  deploy:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+
+      - run: |
+          firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - install
+      - lint:
+          requires:
+            - install
+      - build:
+          requires:
+            - install
+      - deploy:
+          requires:
+            - lint
+            - build
+          filters:
+            branches:
+              only: master

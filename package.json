@@ -18,7 +18,12 @@
     "eject": "react-scripts eject",
     "lib:build": "node-sass src/library/index.scss public/lib/evoli.css",
     "lib:build:compressed": "node-sass src/library/index.scss public/lib/evoli.compressed.css --output-style compressed",
-    "lib:build:watch": "npm run lib:build && npm run lib:build -- -w"
+    "lib:build:watch": "npm run lib:build && npm run lib:build -- -w",
+    "lint": "eslint src --ext js,jsx",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier \"src/**/*.{jsx,css,js}\"",
+    "prettier:write": "npm run prettier -- --write",
+    "prettier:check": "npm run prettier -- --check"
   },
   "eslintConfig": {
     "extends": "react-app"
