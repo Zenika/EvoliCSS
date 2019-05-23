@@ -61,6 +61,11 @@ jobs:
       - run: |
           npm run lib:build
           npm run lin:compressed
+      
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - public/
 
   deploy:
     working_directory: *workspace_root
