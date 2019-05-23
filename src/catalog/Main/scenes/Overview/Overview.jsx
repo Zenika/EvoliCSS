@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import Figma from 'catalog/components/Figma'
 
 import Classes from './scenes/Classes'
 import Colors from './scenes/Colors'
@@ -12,6 +13,7 @@ import Start from './scenes/Start'
 const Overview = ({ match }) => (
   <>
     <h1>Overview</h1>
+    <Figma nodeId="0%253A1" />
     <Route path={match.path + '/classes'} component={Classes} />
     <Route path={match.path + '/colors'} component={Colors} />
     <Route path={match.path + '/functions'} component={Functions} />

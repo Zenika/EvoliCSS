@@ -1,5 +1,11 @@
 import React from 'react'
+import Figma from 'catalog/components/Figma'
 
-const Image = () => <h2>Image</h2>
+const Image = () => (
+  <div>
+    <h2>Image</h2>
+    <Figma nodeId="4%253A162" />
+  </div>
+)
 
 export default Image

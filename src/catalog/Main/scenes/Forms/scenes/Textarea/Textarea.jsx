@@ -1,5 +1,11 @@
 import React from 'react'
+import Figma from 'catalog/components/Figma'
 
-const Textarea = () => <h2>Textarea</h2>
+const Textarea = () => (
+  <div>
+    <h2>Textarea</h2>
+    <Figma nodeId="4%253A204" />
+  </div>
+)
 
 export default Textarea

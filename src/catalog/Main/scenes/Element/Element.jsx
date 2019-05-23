@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { Route } from 'react-router-dom'
+import Figma from 'catalog/components/Figma'
 
 import Box from './scenes/Box'
 import Button from './scenes/Button'
@@ -17,6 +17,7 @@ import Title from './scenes/Title'
 const Element = ({ match }) => (
   <>
     <h1>Element</h1>
+    <Figma nodeId="4%253A94" />
     <Route path={match.path + '/box'} component={Box} />
     <Route path={match.path + '/button'} component={Button} />
     <Route path={match.path + '/content'} component={Content} />

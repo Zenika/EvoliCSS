@@ -1,5 +1,10 @@
 import React from 'react'
+import Figma from 'catalog/components/Figma'
 
-const Basics = () => <h2>Basics</h2>
-
+const Basics = () => (
+  <div>
+    <h2>Basics</h2>
+    <Figma nodeId="4%253A192" />
+  </div>
+)
 export default Basics

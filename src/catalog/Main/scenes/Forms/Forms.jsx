@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import Figma from 'catalog/components/Figma'
 
 import Checkbox from './scenes/Checkbox'
 import File from './scenes/File'
@@ -12,6 +13,7 @@ import Textarea from './scenes/Textarea'
 const Forms = ({ match }) => (
   <>
     <h1>Forms</h1>
+    <Figma nodeId="4%253A96" />
     <Route path={match.path + '/checkbox'} component={Checkbox} />
     <Route path={match.path + '/file'} component={File} />
     <Route path={match.path + '/general'} component={General} />
