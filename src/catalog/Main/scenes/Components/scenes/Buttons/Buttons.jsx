@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Sandbox from 'catalog/components/Sandbox'
-
 const Buttons = () => (
   <h2>Buttons</h2>
   // <Sandbox>

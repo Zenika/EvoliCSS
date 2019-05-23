@@ -1,5 +1,4 @@
 import React from 'react'
-import Sandbox from 'catalog/components/Sandbox'
 
 import './colors.scss'
 
