@@ -1,9 +1,9 @@
 $primary: #b51432;
-$link: #1495b5;
-$info: #3779db;
-$success: #14b564;
-$warning: #eb5d4a;
-$danger: #f00808;
+$link: #12708c;
+$info: #5c95f7;
+$success: #0eb366;
+$warning: #ec951e;
+$danger: #ef1408;
 
 $grey-lighter: #f2f2f2;
 $grey-light: #d2d6d8;
@@ -13,88 +13,15 @@ $black-light: #4c4c4c;
 $black: #000000;
 $white: #ffffff;
 
-.is-primary {
-  color: $primary;
-}
-.is-link {
-  color: $link;
-}
-.is-info {
-  color: $info;
-}
-.is-success {
-  color: $success;
-}
-.is-warning {
-  color: $warning;
-}
-.is-danger {
-  color: $danger;
-}
 .is-grey-lighter {
-  color: $grey-lighter;
+  background-color: $grey-lighter;
 }
 .is-grey-light {
-  color: $grey-light;
+  background-color: $grey-light;
 }
-.is-grey-dark {
-  color: $grey;
+.is-grey {
+  background-color: $grey;
 }
 .is-black-light {
-  color: $black-light;
-}
-.is-black {
-  color: $black;
-}
-.is-white {
-  color: $white;
-}
-
-.is-background-primary {
-  background-color: $primary;
-  color: $white;
-}
-.is-background-link {
-  background-color: $link;
-  color: $white;
-}
-.is-background-info {
-  background-color: $info;
-  color: $white;
-}
-.is-background-success {
-  background-color: $success;
-  color: $white;
-}
-.is-background-warning {
-  background-color: $warning;
-  color: $white;
-}
-.is-background-danger {
-  background-color: $danger;
-  color: $white;
-}
-.is-background-grey-light {
-  background-color: $grey-light;
-  color: $black;
-}
-.is-background-grey-lighter {
-  background-color: $grey-lighter;
-  color: $black;
-}
-.is-background-grey {
-  background-color: $grey;
-  color: $white;
-}
-.is-background-black-light {
   background-color: $black-light;
-  color: $white;
-}
-.is-background-black {
-  background-color: $black;
-  color: $white;
-}
-.is-background-white {
-  background-color: $white;
-  color: $black;
 }

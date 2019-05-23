@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.12.0",
     "prettify-html": "0.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -46,12 +45,14 @@
     "singleQuote": true
   },
   "devDependencies": {
+    "bulma": "^0.7.5",
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "firebase-tools": "^6.10.0",
+    "node-sass": "^4.12.0",
     "prettier": "^1.17.1"
   }
 }
