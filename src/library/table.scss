@@ -1,0 +1,31 @@
+.table {
+  background-color: $white;
+  color: $black-light;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  &thead,
+  &tfoot,
+  &tbody {
+    background-color: transparent;
+  }
+  width: 100%;
+}
+
+table td:not([align]),
+table th:not([align]) {
+  text-align: left;
+}
+
+.table td,
+.table th {
+  border: 1px solid $grey-light;
+  border-width: 0 0 1px;
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+}
+
+.table tr.is-selected {
+  background-color: $info;
+  color: $white;
+}
