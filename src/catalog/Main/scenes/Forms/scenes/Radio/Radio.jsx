@@ -1,5 +1,14 @@
 import React from 'react'
+import Iframe from 'catalog/components/Iframe'
 
-const Radio = () => <h2>Radio</h2>
+const Radio = () => (
+  <div>
+    <h2>Radio</h2>
+    <Iframe
+      id="forms-radio"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFNTIGdJacxKH3DHRkomttIFv%2FEvoliCSS%3Fnode-id%3D4%253A194"
+    />
+  </div>
+)
 
 export default Radio
