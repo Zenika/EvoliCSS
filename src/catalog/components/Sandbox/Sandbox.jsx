@@ -5,6 +5,7 @@ import { Sandbox as RawSandbox } from 'react-sandbox-editor'
 
 const Sandbox = ({ children, js, css }) => (
   <RawSandbox
+    dependencies={['https://use.fontawesome.com/releases/v5.3.1/js/all.js']}
     displayMode="horizontal-split"
     executeOnCodeChange
     executeOnCodeChangeDebounce={1000}

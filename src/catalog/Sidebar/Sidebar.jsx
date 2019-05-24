@@ -65,34 +65,34 @@ const Sidebar = () => (
               <Link to="/element/box">Box</Link>
             </li>
             <li>
-              <Link to="/element/content">Content</Link>
-            </li>
-            <li>
-              <Link to="/element/icon">Icon</Link>
-            </li>
-            <li>
-              <Link to="/element/notification">Notification</Link>
-            </li>
-            <li>
-              <Link to="/element/table">Table</Link>
-            </li>
-            <li>
-              <Link to="/element/title">Title</Link>
-            </li>
-            <li>
               <Link to="/element/button">Button</Link>
+            </li>
+            <li>
+              <Link to="/element/content">Content</Link>
             </li>
             <li>
               <Link to="/element/delete">Delete</Link>
             </li>
             <li>
+              <Link to="/element/icon">Icon</Link>
+            </li>
+            <li>
               <Link to="/element/image">Image</Link>
+            </li>
+            <li>
+              <Link to="/element/notification">Notification</Link>
             </li>
             <li>
               <Link to="/element/progress-bars">Progress bars</Link>
             </li>
             <li>
+              <Link to="/element/table">Table</Link>
+            </li>
+            <li>
               <Link to="/element/tag">Tag</Link>
+            </li>
+            <li>
+              <Link to="/element/title">Title</Link>
             </li>
           </ul>
         </li>
