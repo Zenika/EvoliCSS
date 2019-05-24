@@ -21,25 +21,6 @@ const BoxGeneral = () => (
                 massa fringilla egestas. Nullam condimentum luctus turpis.
               </p>
             </div>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" aria-label="reply">
-                  <span class="icon is-small">
-                    <i class="fas fa-reply" aria-hidden="true" />
-                  </span>
-                </a>
-                <a class="level-item" aria-label="retweet">
-                  <span class="icon is-small">
-                    <i class="fas fa-retweet" aria-hidden="true" />
-                  </span>
-                </a>
-                <a class="level-item" aria-label="like">
-                  <span class="icon is-small">
-                    <i class="fas fa-heart" aria-hidden="true" />
-                  </span>
-                </a>
-              </div>
-            </nav>
           </div>
         </article>
       </div>
