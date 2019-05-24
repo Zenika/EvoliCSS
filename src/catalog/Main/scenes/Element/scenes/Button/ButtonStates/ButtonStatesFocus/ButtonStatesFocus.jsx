@@ -5,13 +5,13 @@ const ButtonStatesFocus = () => (
   <div>
     <h4>Focus</h4>
     <Sandbox>
-      <a className="button is-focused">Focus</a>
-      <a className="button is-primary is-focused">Focus</a>
-      <a className="button is-link is-focused">Focus</a>
-      <a className="button is-info is-focused">Focus</a>
-      <a className="button is-success is-focused">Focus</a>
-      <a className="button is-warning is-focused">Focus</a>
-      <a className="button is-danger is-focused">Focus</a>
+      <button className="button is-focused">Focus</button>
+      <button className="button is-primary is-focused">Focus</button>
+      <button className="button is-link is-focused">Focus</button>
+      <button className="button is-info is-focused">Focus</button>
+      <button className="button is-success is-focused">Focus</button>
+      <button className="button is-warning is-focused">Focus</button>
+      <button className="button is-danger is-focused">Focus</button>
     </Sandbox>
   </div>
 )

@@ -5,13 +5,13 @@ const ButtonStatesHover = () => (
   <div>
     <h4>Hover</h4>
     <Sandbox>
-      <a className="button is-hovered">Hover</a>
-      <a className="button is-primary is-hovered">Hover</a>
-      <a className="button is-link is-hovered">Hover</a>
-      <a className="button is-info is-hovered">Hover</a>
-      <a className="button is-success is-hovered">Hover</a>
-      <a className="button is-warning is-hovered">Hover</a>
-      <a className="button is-danger is-hovered">Hover</a>
+      <button className="button is-hovered">Hover</button>
+      <button className="button is-primary is-hovered">Hover</button>
+      <button className="button is-link is-hovered">Hover</button>
+      <button className="button is-info is-hovered">Hover</button>
+      <button className="button is-success is-hovered">Hover</button>
+      <button className="button is-warning is-hovered">Hover</button>
+      <button className="button is-danger is-hovered">Hover</button>
     </Sandbox>
   </div>
 )

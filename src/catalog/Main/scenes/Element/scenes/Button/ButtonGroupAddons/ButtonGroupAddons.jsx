@@ -7,55 +7,55 @@ const ButtonGroupAddons = () => (
     <Sandbox>
       <div className="field has-addons">
         <p className="control">
-          <a className="button">
+          <button className="button">
             <span className="icon is-small">
               <i className="fas fa-bold" />
             </span>
             <span>Bold</span>
-          </a>
+          </button>
         </p>
         <p className="control">
-          <a className="button">
+          <button className="button">
             <span className="icon is-small">
               <i className="fas fa-italic" />
             </span>
             <span>Italic</span>
-          </a>
+          </button>
         </p>
         <p className="control">
-          <a className="button">
+          <button className="button">
             <span className="icon is-small">
               <i className="fas fa-underline" />
             </span>
             <span>Underline</span>
-          </a>
+          </button>
         </p>
       </div>
 
       <div className="field has-addons">
         <p className="control">
-          <a className="button">
+          <button className="button">
             <span className="icon is-small">
               <i className="fas fa-align-left" />
             </span>
             <span>Left</span>
-          </a>
+          </button>
         </p>
         <p className="control">
-          <a className="button">
+          <button className="button">
             <span className="icon is-small">
               <i className="fas fa-align-center" />
             </span>
             <span>Center</span>
-          </a>
+          </button>
         </p>
         <p className="control">
-          <a className="button">
+          <button className="button">
             <span className="icon is-small">
               <i className="fas fa-align-right" />
             </span>
             <span>Right</span>
-          </a>
+          </button>
         </p>
       </div>
     </Sandbox>

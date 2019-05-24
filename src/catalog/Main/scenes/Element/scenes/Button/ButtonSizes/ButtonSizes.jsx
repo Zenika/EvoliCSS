@@ -6,25 +6,25 @@ const ButtonSizes = () => (
     <h3>Sizes</h3>
     <Sandbox>
       <div className="buttons are-medium">
-        <a className="button">All</a>
-        <a className="button">Medium</a>
-        <a className="button">Size</a>
+        <button className="button">All</button>
+        <button className="button">Medium</button>
+        <button className="button">Size</button>
       </div>
     </Sandbox>
     <Sandbox>
       <div className="buttons are-small">
-        <a className="button">Small</a>
-        <a className="button">Small</a>
-        <a className="button">Small</a>
-        <a className="button is-normal">Normal</a>
-        <a className="button">Small</a>
+        <button className="button">Small</button>
+        <button className="button">Small</button>
+        <button className="button">Small</button>
+        <button className="button is-normal">Normal</button>
+        <button className="button">Small</button>
       </div>
     </Sandbox>
     <Sandbox>
-      <a className="button is-small is-fullwidth">Small</a>
-      <a className="button is-fullwidth">Normal</a>
-      <a className="button is-medium is-fullwidth">Medium</a>
-      <a className="button is-large is-fullwidth">Large</a>
+      <button className="button is-small is-fullwidth">Small</button>
+      <button className="button is-fullwidth">Normal</button>
+      <button className="button is-medium is-fullwidth">Medium</button>
+      <button className="button is-large is-fullwidth">Large</button>
     </Sandbox>
   </div>
 )

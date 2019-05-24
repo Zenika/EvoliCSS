@@ -5,13 +5,13 @@ const ButtonStatesNormal = () => (
   <div>
     <h4>Normal</h4>
     <Sandbox>
-      <a className="button">Normal</a>
-      <a className="button is-primary">Normal</a>
-      <a className="button is-link">Normal</a>
-      <a className="button is-info">Normal</a>
-      <a className="button is-success">Normal</a>
-      <a className="button is-warning">Normal</a>
-      <a className="button is-danger">Normal</a>
+      <button className="button">Normal</button>
+      <button className="button is-primary">Normal</button>
+      <button className="button is-link">Normal</button>
+      <button className="button is-info">Normal</button>
+      <button className="button is-success">Normal</button>
+      <button className="button is-warning">Normal</button>
+      <button className="button is-danger">Normal</button>
     </Sandbox>
   </div>
 )

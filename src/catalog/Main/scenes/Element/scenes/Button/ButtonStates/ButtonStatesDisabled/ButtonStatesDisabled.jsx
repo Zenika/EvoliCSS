@@ -5,27 +5,27 @@ const ButtonStatesDisabled = () => (
   <div>
     <h4>Disabled</h4>
     <Sandbox>
-      <a className="button" title="Disabled button" disabled>
+      <button className="button" title="Disabled button" disabled>
         Disabled
-      </a>
-      <a className="button is-primary" title="Disabled button" disabled>
+      </button>
+      <button className="button is-primary" title="Disabled button" disabled>
         Disabled
-      </a>
-      <a className="button is-link" title="Disabled button" disabled>
+      </button>
+      <button className="button is-link" title="Disabled button" disabled>
         Disabled
-      </a>
-      <a className="button is-info" title="Disabled button" disabled>
+      </button>
+      <button className="button is-info" title="Disabled button" disabled>
         Disabled
-      </a>
-      <a className="button is-success" title="Disabled button" disabled>
+      </button>
+      <button className="button is-success" title="Disabled button" disabled>
         Disabled
-      </a>
-      <a className="button is-warning" title="Disabled button" disabled>
+      </button>
+      <button className="button is-warning" title="Disabled button" disabled>
         Disabled
-      </a>
-      <a className="button is-danger" title="Disabled button" disabled>
+      </button>
+      <button className="button is-danger" title="Disabled button" disabled>
         Disabled
-      </a>
+      </button>
     </Sandbox>
   </div>
 )

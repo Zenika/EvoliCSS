@@ -5,12 +5,12 @@ const ButtonDisplays = () => (
   <div>
     <h3>Displays</h3>
     <Sandbox>
-      <a className="button is-outlined">Outlined</a>
-      <a className="button is-primary is-outlined">Outlined</a>
-      <a className="button is-link is-outlined">Outlined</a>
-      <a className="button is-info is-outlined">Outlined</a>
-      <a className="button is-success is-outlined">Outlined</a>
-      <a className="button is-danger is-outlined">Outlined</a>
+      <button className="button is-outlined">Outlined</button>
+      <button className="button is-primary is-outlined">Outlined</button>
+      <button className="button is-link is-outlined">Outlined</button>
+      <button className="button is-info is-outlined">Outlined</button>
+      <button className="button is-success is-outlined">Outlined</button>
+      <button className="button is-danger is-outlined">Outlined</button>
     </Sandbox>
   </div>
 )

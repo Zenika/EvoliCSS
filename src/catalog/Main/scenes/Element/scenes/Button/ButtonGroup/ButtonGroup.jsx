@@ -7,13 +7,13 @@ const ButtonGroup = () => (
     <Sandbox>
       <div className="field is-grouped">
         <p className="control">
-          <a className="button is-link">Save changes</a>
+          <button className="button is-link">Save changes</button>
         </p>
         <p className="control">
-          <a className="button">Cancel</a>
+          <button className="button">Cancel</button>
         </p>
         <p className="control">
-          <a className="button is-danger">Delete post</a>
+          <button className="button is-danger">Delete post</button>
         </p>
       </div>
     </Sandbox>

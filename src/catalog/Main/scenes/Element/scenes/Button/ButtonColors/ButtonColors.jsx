@@ -5,19 +5,19 @@ const ButtonColors = () => (
   <div>
     <h3>Colors</h3>
     <Sandbox>
-      <a className="button is-white">White</a>
-      <a className="button is-light">Light</a>
-      <a className="button is-dark">Dark</a>
-      <a className="button is-black">Black</a>
-      <a className="button is-text">Text</a>
+      <button className="button is-white">White</button>
+      <button className="button is-light">Light</button>
+      <button className="button is-dark">Dark</button>
+      <button className="button is-black">Black</button>
+      <button className="button is-text">Text</button>
     </Sandbox>
     <Sandbox>
-      <a className="button is-primary">Primary</a>
-      <a className="button is-link">Link</a>
-      <a className="button is-info">Info</a>
-      <a className="button is-success">Success</a>
-      <a className="button is-warning">Warning</a>
-      <a className="button is-danger">Danger</a>
+      <button className="button is-primary">Primary</button>
+      <button className="button is-link">Link</button>
+      <button className="button is-info">Info</button>
+      <button className="button is-success">Success</button>
+      <button className="button is-warning">Warning</button>
+      <button className="button is-danger">Danger</button>
     </Sandbox>
   </div>
 )
