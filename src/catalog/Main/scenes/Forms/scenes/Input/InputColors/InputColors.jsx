@@ -5,29 +5,29 @@ const InputColors = () => (
   <div>
     <h3>Colors</h3>
     <Sandbox>
-      <div class="field">
-        <div class="control">
-          <input class="input is-primary" type="text" placeholder="Primary input" />
+      <div className="field">
+        <div className="control">
+          <input className="input is-primary" type="text" placeholder="Primary input" />
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <input class="input is-info" type="text" placeholder="Info input" />
+      <div className="field">
+        <div className="control">
+          <input className="input is-info" type="text" placeholder="Info input" />
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <input class="input is-success" type="text" placeholder="Success input" />
+      <div className="field">
+        <div className="control">
+          <input className="input is-success" type="text" placeholder="Success input" />
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <input class="input is-warning" type="text" placeholder="Warning input" />
+      <div className="field">
+        <div className="control">
+          <input className="input is-warning" type="text" placeholder="Warning input" />
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <input class="input is-danger" type="text" placeholder="Danger input" />
+      <div className="field">
+        <div className="control">
+          <input className="input is-danger" type="text" placeholder="Danger input" />
         </div>
       </div>
     </Sandbox>

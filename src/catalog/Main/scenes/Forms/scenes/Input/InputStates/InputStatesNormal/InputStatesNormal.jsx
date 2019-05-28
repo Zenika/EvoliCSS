@@ -5,8 +5,8 @@ const InputStatesNormal = () => (
   <div>
     <h3>Normal</h3>
     <Sandbox>
-      <div class="control">
-        <input class="input" type="text" placeholder="Normal input" />
+      <div className="control">
+        <input className="input" type="text" placeholder="Normal input" />
       </div>
     </Sandbox>
   </div>

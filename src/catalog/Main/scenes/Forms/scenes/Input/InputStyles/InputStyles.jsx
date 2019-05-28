@@ -5,7 +5,7 @@ const InputStyles = () => (
   <div>
     <h3>Styles</h3>
     <Sandbox>
-      <input class="input is-rounded" type="text" placeholder="Rounded input" />
+      <input className="input is-rounded" type="text" placeholder="Rounded input" />
     </Sandbox>
   </div>
 )

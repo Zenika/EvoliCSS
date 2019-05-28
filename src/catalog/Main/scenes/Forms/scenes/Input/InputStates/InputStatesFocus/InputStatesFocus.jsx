@@ -5,8 +5,8 @@ const InputStylesFocus = () => (
   <div>
     <h3>Focus</h3>
     <Sandbox>
-      <div class="control">
-        <input class="input is-focused" type="text" placeholder="Focused input" />
+      <div className="control">
+        <input className="input is-focused" type="text" placeholder="Focused input" />
       </div>
     </Sandbox>
   </div>

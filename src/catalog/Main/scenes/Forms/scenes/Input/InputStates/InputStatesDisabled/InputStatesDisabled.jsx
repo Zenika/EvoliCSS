@@ -5,8 +5,8 @@ const InputStylesDisabled = () => (
   <div>
     <h3>Disabled</h3>
     <Sandbox>
-      <div class="control">
-        <input class="input" type="text" placeholder="Disabled input" disabled />
+      <div className="control">
+        <input className="input" type="text" placeholder="Disabled input" disabled />
       </div>
     </Sandbox>
   </div>
