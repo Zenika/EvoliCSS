@@ -108,7 +108,7 @@ jobs:
           command: cp package.json build/ && cp README.md build/
       - run:
           name: Publish package
-          command: npm publish
+          command: npm publish build
 
 workflows:
   version: 2
