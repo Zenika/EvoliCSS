@@ -1,7 +1,6 @@
 {
   "name": "evoli-css",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "prettify-html": "0.0.2",
