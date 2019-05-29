@@ -125,6 +125,8 @@ workflows:
           requires:
             - install
       - lib/build:
+          requires:
+            - install
           filters:
             branches:
               only: npm-publish
@@ -135,15 +137,17 @@ workflows:
           filters:
             branches:
               only: master
-      - publish:
+      - publish/beta:
           requires:
             - lib/build
+            - lint
           filters:
             branches:
               only: npm-publish
-      - deploy:
+      - publish:
           requires:
             - lib/build
+            - lint
           filters:
             branches:
               only: npm-publish
