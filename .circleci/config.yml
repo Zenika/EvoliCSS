@@ -60,7 +60,7 @@ jobs:
 
       - run: |
           npm run lib:build
-          npm run lin:compressed
+          npm run lib:build:compressed
           cp -r public/lib build
 
       - persist_to_workspace:
@@ -124,6 +124,10 @@ workflows:
       - build:
           requires:
             - install
+      - lib/build:
+          filters:
+            branches:
+              only: npm-publish
       - deploy:
           requires:
             - lint
@@ -133,13 +137,13 @@ workflows:
               only: master
       - publish:
           requires:
-            - deploy
+            - lib/build
           filters:
             branches:
               only: npm-publish
       - deploy:
           requires:
-            - deploy
+            - lib/build
           filters:
             branches:
               only: npm-publish
