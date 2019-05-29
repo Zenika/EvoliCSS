@@ -91,7 +91,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - run:
           name: Publish package
-          command: npm publish public/lib --tag beta
+          command: npm publish --tag beta
 
   publish:
     working_directory: *workspace_root
@@ -104,8 +104,11 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - run:
+          name: Copy package and readme
+          command: cp package.json build/ && cp README.md build/
+      - run:
           name: Publish package
-          command: npm publish public/lib
+          command: npm publish
 
 workflows:
   version: 2
