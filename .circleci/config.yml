@@ -90,6 +90,9 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - run:
+          name: Copy package and readme
+          command: cp package.json build/ && cp README.md build/
+      - run:
           name: Publish package
           command: npm publish --tag beta
 
