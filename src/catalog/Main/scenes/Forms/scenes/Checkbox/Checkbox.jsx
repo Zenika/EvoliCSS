@@ -7,19 +7,19 @@ const Checkbox = () => (
     <h2>Checkbox</h2>
     <Figma nodeId="4%253A202" />
     <Sandbox>
-      <label class="checkbox">
+      <label className="checkbox">
         <input type="checkbox" />
         Remember me
       </label>
     </Sandbox>
     <Sandbox>
-      <label class="checkbox">
+      <label className="checkbox">
         <input type="checkbox" />I agree to the{' '}
         <a href="https://github.com/Zenika/EvoliCSS">terms and conditions</a>
       </label>
     </Sandbox>
     <Sandbox>
-      <label class="checkbox" disabled>
+      <label className="checkbox" disabled>
         <input type="checkbox" disabled />
         Save my preferences
       </label>
