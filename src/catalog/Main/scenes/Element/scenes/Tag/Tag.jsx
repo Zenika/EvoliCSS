@@ -4,6 +4,8 @@ import TagNormal from './TagNormal/TagNormal'
 import TagColors from './TagColors/TagColors'
 import TagSizes from './TagSizes/TagSizes'
 import TagModifiers from './TagModifiers/TagModifiers'
+import TagCombinations from './TagCombinations/TagCombinations'
+import TagList from './TagList/TagList'
 
 const Tag = () => (
   <div>
@@ -13,6 +15,8 @@ const Tag = () => (
     <TagColors />
     <TagSizes />
     <TagModifiers />
+    <TagCombinations />
+    <TagList />
   </div>
 )
 
