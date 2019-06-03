@@ -94,7 +94,7 @@ jobs:
           command: cp package.json build/ && cp README.md build/
       - run:
           name: Publish package
-          command: npm publish build --tag beta
+          command: npm publish build --tag beta --access public
 
   publish:
     working_directory: *workspace_root
@@ -111,7 +111,7 @@ jobs:
           command: cp package.json build/ && cp README.md build/
       - run:
           name: Publish package
-          command: npm publish build
+          command: npm publish build --access public
 
 workflows:
   version: 2
