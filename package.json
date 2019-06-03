@@ -1,6 +1,6 @@
 {
-  "name": "evoli-css",
-  "version": "0.0.1",
+  "name": "@zenika/evoli-css",
+  "version": "0.1.0",
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "prettify-html": "0.0.2",
