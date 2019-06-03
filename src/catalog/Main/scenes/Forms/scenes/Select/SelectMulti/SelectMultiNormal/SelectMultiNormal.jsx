@@ -5,7 +5,7 @@ const SelectMultiNormal = () => (
   <div>
     <h3>Normal</h3>
     <Sandbox>
-      <div class="select is-multiple">
+      <div className="select is-multiple">
         <select multiple size="8">
           <option value="Argentina">Argentina</option>
           <option value="Bolivia">Bolivia</option>

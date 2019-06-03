@@ -5,7 +5,7 @@ const SelectNormal = () => (
   <div>
     <h2>Normal</h2>
     <Sandbox>
-      <div class="select">
+      <div className="select">
         <select>
           <option>Select dropdown</option>
           <option>With options</option>

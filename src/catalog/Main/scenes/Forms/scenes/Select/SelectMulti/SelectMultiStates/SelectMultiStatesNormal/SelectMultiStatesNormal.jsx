@@ -5,8 +5,8 @@ const SelectMultiStatesNormal = () => (
   <div>
     <h4>Normal</h4>
     <Sandbox>
-      <div class="control">
-        <div class="select">
+      <div className="control">
+        <div className="select">
           <select>
             <option>Select dropdown</option>
             <option>With options</option>

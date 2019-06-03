@@ -5,9 +5,9 @@ const SelectMultiStatesFocus = () => (
   <div>
     <h4>Focus</h4>
     <Sandbox>
-      <div class="control">
-        <div class="select">
-          <select class="is-focused">
+      <div className="control">
+        <div className="select">
+          <select className="is-focused">
             <option>Select dropdown</option>
             <option>With options</option>
           </select>

@@ -5,7 +5,7 @@ const SelectMultiStyles = () => (
   <div>
     <h3>Styles</h3>
     <Sandbox>
-      <div class="select is-rounded">
+      <div className="select is-rounded">
         <select>
           <option>Rounded dropdown</option>
           <option>With options</option>

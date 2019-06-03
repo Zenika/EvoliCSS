@@ -5,9 +5,9 @@ const SelectMultiStatesHover = () => (
   <div>
     <h4>Hover</h4>
     <Sandbox>
-      <div class="control">
-        <div class="select">
-          <select class="is-hovered">
+      <div className="control">
+        <div className="select">
+          <select className="is-hovered">
             <option>Select dropdown</option>
             <option>With options</option>
           </select>

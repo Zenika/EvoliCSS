@@ -5,9 +5,9 @@ const SelectMultiSizes = () => (
   <div>
     <hs>Sizes</hs>
     <Sandbox>
-      <div class="field">
-        <div class="control">
-          <div class="select is-small">
+      <div className="field">
+        <div className="control">
+          <div className="select is-small">
             <select>
               <option>Select dropdown</option>
               <option>With options</option>
@@ -15,9 +15,9 @@ const SelectMultiSizes = () => (
           </div>
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <div class="select">
+      <div className="field">
+        <div className="control">
+          <div className="select">
             <select>
               <option>Select dropdown</option>
               <option>With options</option>
@@ -25,9 +25,9 @@ const SelectMultiSizes = () => (
           </div>
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <div class="select is-medium">
+      <div className="field">
+        <div className="control">
+          <div className="select is-medium">
             <select>
               <option>Select dropdown</option>
               <option>With options</option>
@@ -35,9 +35,9 @@ const SelectMultiSizes = () => (
           </div>
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <div class="select is-large">
+      <div className="field">
+        <div className="control">
+          <div className="select is-large">
             <select>
               <option>Select dropdown</option>
               <option>With options</option>

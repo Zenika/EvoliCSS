@@ -5,74 +5,74 @@ const SelectMultiStatesIcons = () => (
   <div>
     <h4>Icons</h4>
     <Sandbox>
-      <div class="field">
-        <div class="control has-icons-left">
-          <div class="select">
+      <div className="field">
+        <div className="control has-icons-left">
+          <div className="select">
             <select>
               <option selected>Country</option>
               <option>Select dropdown</option>
               <option>With options</option>
             </select>
           </div>
-          <div class="icon is-small is-left">
-            <i class="fas fa-globe" />
+          <div className="icon is-small is-left">
+            <i className="fas fa-globe" />
           </div>
         </div>
       </div>
     </Sandbox>
     <Sandbox>
-      <div class="control has-icons-left">
-        <div class="select is-small">
+      <div className="control has-icons-left">
+        <div className="select is-small">
           <select>
             <option selected>Country</option>
             <option>Select dropdown</option>
             <option>With options</option>
           </select>
         </div>
-        <span class="icon is-small is-left">
-          <i class="fas fa-globe" />
+        <span className="icon is-small is-left">
+          <i className="fas fa-globe" />
         </span>
       </div>
     </Sandbox>
     <Sandbox>
-      <div class="control has-icons-left">
-        <div class="select">
+      <div className="control has-icons-left">
+        <div className="select">
           <select>
             <option selected>Country</option>
             <option>Select dropdown</option>
             <option>With options</option>
           </select>
         </div>
-        <span class="icon is-left">
-          <i class="fas fa-globe" />
+        <span className="icon is-left">
+          <i className="fas fa-globe" />
         </span>
       </div>
     </Sandbox>
     <Sandbox>
-      <div class="control has-icons-left">
-        <div class="select is-medium">
+      <div className="control has-icons-left">
+        <div className="select is-medium">
           <select>
             <option selected>Country</option>
             <option>Select dropdown</option>
             <option>With options</option>
           </select>
         </div>
-        <span class="icon is-medium is-left">
-          <i class="fas fa-globe" />
+        <span className="icon is-medium is-left">
+          <i className="fas fa-globe" />
         </span>
       </div>
     </Sandbox>
     <Sandbox>
-      <div class="control has-icons-left">
-        <div class="select is-large">
+      <div className="control has-icons-left">
+        <div className="select is-large">
           <select>
             <option selected>Country</option>
             <option>Select dropdown</option>
             <option>With options</option>
           </select>
         </div>
-        <span class="icon is-large is-left">
-          <i class="fas fa-globe" />
+        <span className="icon is-large is-left">
+          <i className="fas fa-globe" />
         </span>
       </div>
     </Sandbox>

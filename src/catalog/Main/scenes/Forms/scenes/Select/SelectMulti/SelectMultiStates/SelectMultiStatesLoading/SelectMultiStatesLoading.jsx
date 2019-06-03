@@ -5,8 +5,8 @@ const SelectMultiStatesLoading = () => (
   <div>
     <h4>Loading</h4>
     <Sandbox>
-      <div class="control">
-        <div class="select is-loading">
+      <div className="control">
+        <div className="select is-loading">
           <select>
             <option>Select dropdown</option>
             <option>With options</option>
