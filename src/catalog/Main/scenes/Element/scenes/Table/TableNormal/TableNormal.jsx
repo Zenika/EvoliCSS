@@ -5,7 +5,7 @@ const TableNormal = () => (
   <div>
     <h3>Normal</h3>
     <Sandbox>
-      <table class="table">
+      <table className="table">
         <thead>
           <tr>
             <th>
@@ -155,7 +155,7 @@ const TableNormal = () => (
               </a>
             </td>
           </tr>
-          <tr class="is-selected">
+          <tr className="is-selected">
             <th>4</th>
             <td>
               <a
