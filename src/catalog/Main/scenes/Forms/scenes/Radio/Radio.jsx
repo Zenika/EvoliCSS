@@ -7,40 +7,40 @@ const Radio = () => (
     <h2>Radio</h2>
     <Figma nodeId="4%253A194" />
     <Sandbox>
-      <div class="control">
-        <label class="radio">
+      <div className="control">
+        <label className="radio">
           <input type="radio" name="answer" />
           Yes
         </label>
-        <label class="radio">
+        <label className="radio">
           <input type="radio" name="answer" />
           No
         </label>
       </div>
     </Sandbox>
     <Sandbox>
-      <div class="control">
-        <label class="radio">
+      <div className="control">
+        <label className="radio">
           <input type="radio" name="foobar" />
           Foo
         </label>
-        <label class="radio">
+        <label className="radio">
           <input type="radio" name="foobar" checked />
           Bar
         </label>
       </div>
     </Sandbox>
     <Sandbox>
-      <div class="control">
-        <label class="radio">
+      <div className="control">
+        <label className="radio">
           <input type="radio" name="rsvp" />
           Going
         </label>
-        <label class="radio">
+        <label className="radio">
           <input type="radio" name="rsvp" />
           Not going
         </label>
-        <label class="radio" disabled>
+        <label className="radio" disabled>
           <input type="radio" name="rsvp" disabled />
           Maybe
         </label>
