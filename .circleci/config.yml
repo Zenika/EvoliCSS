@@ -144,12 +144,12 @@ workflows:
             - lint
           filters:
             branches:
-              only: npm-publish
+              only: master
       - publish:
           context: npm-org
           requires:
             - lib/build
             - lint
           filters:
-            branches:
-              only: npm-publish
+            tags:
+              only: /^v.*/
