@@ -83,7 +83,6 @@ jobs:
     working_directory: *workspace_root
     docker:
       - image: circleci/node:10
-    context: npm-org
     steps:
       - checkout
       - *attach_workspace
@@ -101,7 +100,6 @@ jobs:
     working_directory: *workspace_root
     docker:
       - image: circleci/node:10
-    context: npm-org
     steps:
       - checkout
       - *attach_workspace
@@ -140,6 +138,7 @@ workflows:
             branches:
               only: master
       - publish/beta:
+          context: npm-org
           requires:
             - lib/build
             - lint
@@ -147,6 +146,7 @@ workflows:
             branches:
               only: npm-publish
       - publish:
+          context: npm-org
           requires:
             - lib/build
             - lint
