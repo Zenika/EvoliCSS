@@ -1,15 +1,7 @@
 {
   "name": "@zenika/evoli-css",
   "version": "0.1.0",
-  "dependencies": {
-    "@mdi/font": "^3.6.95",
-    "prettify-html": "0.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-sandbox-editor": "^2.0.1",
-    "react-scripts": "3.0.1"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -54,6 +46,12 @@
     "eslint-plugin-standard": "^4.0.0",
     "firebase-tools": "^6.10.0",
     "node-sass": "^4.12.0",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "prettify-html": "0.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-sandbox-editor": "^2.0.1",
+    "react-scripts": "3.0.1"
   }
 }
