@@ -134,9 +134,6 @@ workflows:
           requires:
             - lint
             - build
-          filters:
-            branches:
-              only: master
       - publish/beta:
           context: npm-org
           requires:
