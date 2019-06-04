@@ -127,13 +127,13 @@ workflows:
       - lib/build:
           requires:
             - install
-          filters:
-            branches:
-              only: npm-publish
       - deploy:
           requires:
             - lint
             - build
+          filters:
+            branches:
+              only: master
       - publish/beta:
           context: npm-org
           requires:
