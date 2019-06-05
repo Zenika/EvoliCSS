@@ -61,6 +61,7 @@ jobs:
       - run: |
           npm run lib:build
           npm run lib:build:compressed
+          mkdir -p build/lib
           cp -r public/lib build/lib
 
       - persist_to_workspace:
