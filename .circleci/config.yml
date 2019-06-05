@@ -61,13 +61,12 @@ jobs:
       - run: |
           npm run lib:build
           npm run lib:build:compressed
-          mkdir -p build/lib
-          cp -r public/lib build/lib
 
       - persist_to_workspace:
           root: *workspace_root
           paths:
             - build/
+            - public/
 
   deploy:
     working_directory: *workspace_root
@@ -78,6 +77,7 @@ jobs:
       - *attach_workspace
 
       - run: |
+          cp -r public/lib build
           ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
 
   publish/beta:
@@ -137,6 +137,7 @@ workflows:
       - deploy:
           requires:
             - lint
+            - lib/build
             - build
           filters:
             branches:
