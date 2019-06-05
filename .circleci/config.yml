@@ -60,9 +60,9 @@ jobs:
 
       - run: |
           npm run lib:build
-          npm run lin:compressed
+          npm run lib:build:compressed
           cp -r public/lib build
-      
+
       - persist_to_workspace:
           root: *workspace_root
           paths:
@@ -79,6 +79,40 @@ jobs:
       - run: |
           ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
 
+  publish/beta:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Copy package and readme
+          command: cp package.json build/ && cp README.md build/
+      - run:
+          name: Publish package
+          command: npm publish build --tag beta --access public
+
+  publish:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Copy package and readme
+          command: cp package.json build/ && cp README.md build/
+      - run:
+          name: Publish package
+          command: npm publish build --access public
+
 workflows:
   version: 2
   build-deploy:
@@ -87,9 +121,18 @@ workflows:
       - lint:
           requires:
             - install
+          filters:
+            tags:
+              only: /^v.*/
       - build:
           requires:
             - install
+      - lib/build:
+          requires:
+            - install
+          filters:
+            tags:
+              only: /^v.*/
       - deploy:
           requires:
             - lint
@@ -97,3 +140,21 @@ workflows:
           filters:
             branches:
               only: master
+      - publish/beta:
+          context: npm-org
+          requires:
+            - lib/build
+            - lint
+          filters:
+            branches:
+              only: master
+      - publish:
+          context: npm-org
+          requires:
+            - lib/build
+            - lint
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
