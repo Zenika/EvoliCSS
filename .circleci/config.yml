@@ -121,12 +121,16 @@ workflows:
       - lint:
           requires:
             - install
+          tags:
+            only: /^v.*/
       - build:
           requires:
             - install
       - lib/build:
           requires:
             - install
+          tags:
+            only: /^v.*/
       - deploy:
           requires:
             - lint
