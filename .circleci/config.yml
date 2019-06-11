@@ -91,10 +91,10 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - run:
           name: Copy package and readme
-          command: cp package.json build/ && cp README.md build/
+          command: cp package.json public/lib/ && cp README.md public/lib/
       - run:
           name: Publish package
-          command: npm publish build --tag beta --access public
+          command: npm publish public/lib --tag beta --access public
 
   publish:
     working_directory: *workspace_root
@@ -108,10 +108,10 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - run:
           name: Copy package and readme
-          command: cp package.json build/ && cp README.md build/
+          command: cp package.json public/lib/ && cp README.md public/lib/
       - run:
           name: Publish package
-          command: npm publish build --access public
+          command: npm publish public/lib --access public
 
 workflows:
   version: 2
@@ -144,6 +144,7 @@ workflows:
       - publish/beta:
           context: npm-org
           requires:
+            -
             - lib/build
             - lint
           filters:
