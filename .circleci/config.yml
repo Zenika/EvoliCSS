@@ -144,7 +144,6 @@ workflows:
       - publish/beta:
           context: npm-org
           requires:
-            -
             - lib/build
             - lint
           filters:
