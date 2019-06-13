@@ -20,10 +20,10 @@ $colorsAccordion: (
 .accordion {
   width: 100%;
   overflow: hidden;
-  &.border {
+  &.is-border {
     border-left: solid 0.5em $black;
     @each $colorsKey, $color in $colorsAccordion {
-      &-is-#{colorsKey} {
+      &-#{$colorsKey} {
         border-left: solid 0.5em $color;
       }
     }
@@ -91,7 +91,7 @@ $colorsAccordion: (
   }
 
   @each $colorsKey, $color in $colorsAccordion {
-    &-is-#{colorsKey} {
+    &.is-#{$colorsKey} {
       color: white;
       background: $color;
       .accordion-label {

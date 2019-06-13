@@ -8,7 +8,7 @@ const AccordionButton = () => (
       <div className="accordions">
         <div className="accordion is-primary">
           <input type="checkbox" id="chck1" />
-          <label className="accordion-label" for="chck1">
+          <label className="accordion-label" htmlFor="chck1">
             Section 1<button className="button">Default</button>
           </label>
           <div className="accordion-content">
@@ -17,7 +17,7 @@ const AccordionButton = () => (
         </div>
         <div className="accordion is-primary">
           <input type="checkbox" id="chck2" />
-          <label className="accordion-label" for="chck2">
+          <label className="accordion-label" htmlFor="chck2">
             Section 2
             <button className="button" disabled>
               Default

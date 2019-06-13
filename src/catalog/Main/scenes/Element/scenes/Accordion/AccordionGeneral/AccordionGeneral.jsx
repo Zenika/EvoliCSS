@@ -9,7 +9,7 @@ const AccordionGeneral = () => (
       <div className="accordions">
         <div className="accordion">
           <input type="checkbox" id="chck1" />
-          <label className="accordion-label" for="chck1">
+          <label className="accordion-label" htmlFor="chck1">
             Section 1
           </label>
           <div className="accordion-content">
@@ -18,7 +18,7 @@ const AccordionGeneral = () => (
         </div>
         <div className="accordion">
           <input type="checkbox" id="chck2" />
-          <label className="accordion-label" for="chck2">
+          <label className="accordion-label" htmlFor="chck2">
             Section 2
           </label>
           <div className="accordion-content">
@@ -32,7 +32,7 @@ const AccordionGeneral = () => (
       <div className="accordions">
         <div className="accordion">
           <input type="radio" id="rd1" name="rd" />
-          <label className="accordion-label" for="rd1">
+          <label className="accordion-label" htmlFor="rd1">
             Section 1
           </label>
           <div className="accordion-content">
@@ -41,7 +41,7 @@ const AccordionGeneral = () => (
         </div>
         <div className="accordion">
           <input type="radio" id="rd2" name="rd" />
-          <label className="accordion-label" for="rd2">
+          <label className="accordion-label" htmlFor="rd2">
             Section 2
           </label>
           <div className="accordion-content">
@@ -50,7 +50,7 @@ const AccordionGeneral = () => (
         </div>
         <div className="accordion">
           <input type="radio" id="rd3" name="rd" />
-          <label for="rd3" className="accordion-close">
+          <label htmlFor="rd3" className="accordion-close">
             Close others &times;
           </label>
         </div>
