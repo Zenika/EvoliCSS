@@ -1,3 +1,12 @@
+$colorsAccordion: (
+  primary: $primary,
+  link: $link,
+  info: $info,
+  success: $success,
+  warning: $warning,
+  danger: $danger
+);
+
 .accordion input {
   position: absolute;
   opacity: 0;
@@ -13,23 +22,10 @@
   overflow: hidden;
   &.border {
     border-left: solid 0.5em $black;
-    &-is-primary {
-      border-left: solid 0.5em $primary;
-    }
-    &-is-link {
-      border-left: solid 0.5em $link;
-    }
-    &-is-info {
-      border-left: solid 0.5em $info;
-    }
-    &-is-success {
-      border-left: solid 0.5em $success;
-    }
-    &-is-warning {
-      border-left: solid 0.5em $warning;
-    }
-    &-is-danger {
-      border-left: solid 0.5em $danger;
+    @each $colorsKey, $color in $colorsAccordion {
+      &-is-#{colorsKey} {
+        border-left: solid 0.5em $color;
+      }
     }
   }
   &-label {
@@ -93,159 +89,32 @@
       background: darken($white, 10%);
     }
   }
-  &.is-primary {
-    color: white;
-    background: $primary;
-    .accordion-label {
-      /* Icon */
-      &:hover {
-        background: darken($primary, 10%);
+
+  @each $colorsKey, $color in $colorsAccordion {
+    &-is-#{colorsKey} {
+      color: white;
+      background: $color;
+      .accordion-label {
+        /* Icon */
+        &:hover {
+          background: darken($color, 10%);
+        }
       }
-    }
-    .accordion-content {
-      color: $black;
-      background: $white;
-    }
-    .accordion-close {
-      background: $info;
-      &:hover {
-        background: darken($info, 10%);
+      .accordion-content {
+        color: $black;
+        background: $white;
       }
-    }
-    // :checked
-    input:checked {
-      + .accordion-label {
-        background: darken($primary, 10%);
+      .accordion-close {
+        background: $info;
+        &:hover {
+          background: darken($info, 10%);
+        }
       }
-    }
-  }
-  &.is-link {
-    color: white;
-    background: $link;
-    .accordion-label {
-      /* Icon */
-      &:hover {
-        background: darken($link, 10%);
-      }
-    }
-    .accordion-content {
-      color: $black;
-      background: $white;
-    }
-    .accordion-close {
-      background: $info;
-      &:hover {
-        background: darken($info, 10%);
-      }
-    }
-    // :checked
-    input:checked {
-      + .accordion-label {
-        background: darken($link, 10%);
-      }
-    }
-  }
-  &.is-info {
-    color: white;
-    background: $info;
-    .accordion-label {
-      /* Icon */
-      &:hover {
-        background: darken($info, 10%);
-      }
-    }
-    .accordion-content {
-      color: $black;
-      background: $white;
-    }
-    .accordion-close {
-      background: $info;
-      &:hover {
-        background: darken($info, 10%);
-      }
-    }
-    // :checked
-    input:checked {
-      + .accordion-label {
-        background: darken($info, 10%);
-      }
-    }
-  }
-  &.is-success {
-    color: white;
-    background: $success;
-    .accordion-label {
-      /* Icon */
-      &:hover {
-        background: darken($success, 10%);
-      }
-    }
-    .accordion-content {
-      color: $black;
-      background: $white;
-    }
-    .accordion-close {
-      background: $info;
-      &:hover {
-        background: darken($info, 10%);
-      }
-    }
-    // :checked
-    input:checked {
-      + .accordion-label {
-        background: darken($success, 10%);
-      }
-    }
-  }
-  &.is-warning {
-    color: white;
-    background: $warning;
-    .accordion-label {
-      /* Icon */
-      &:hover {
-        background: darken($warning, 10%);
-      }
-    }
-    .accordion-content {
-      color: $black;
-      background: $white;
-    }
-    .accordion-close {
-      background: $info;
-      &:hover {
-        background: darken($info, 10%);
-      }
-    }
-    // :checked
-    input:checked {
-      + .accordion-label {
-        background: darken($warning, 10%);
-      }
-    }
-  }
-  &.is-danger {
-    color: white;
-    background: $danger;
-    .accordion-label {
-      /* Icon */
-      &:hover {
-        background: darken($danger, 10%);
-      }
-    }
-    .accordion-content {
-      color: $black;
-      background: $white;
-    }
-    .accordion-close {
-      background: $info;
-      &:hover {
-        background: darken($info, 10%);
-      }
-    }
-    // :checked
-    input:checked {
-      + .accordion-label {
-        background: darken($danger, 10%);
+      // :checked
+      input:checked {
+        + .accordion-label {
+          background: darken($color, 10%);
+        }
       }
     }
   }
