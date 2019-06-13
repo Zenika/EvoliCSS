@@ -2,6 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import Figma from 'catalog/components/Figma'
 
+import Accordion from './scenes/Accordion'
 import Box from './scenes/Box'
 import Button from './scenes/Button'
 import Content from './scenes/Content'
@@ -18,6 +19,7 @@ const Element = ({ match }) => (
   <>
     <h1>Element</h1>
     <Figma nodeId="4%253A94" />
+    <Route path={match.path + '/accordion'} component={Accordion} />
     <Route path={match.path + '/box'} component={Box} />
     <Route path={match.path + '/button'} component={Button} />
     <Route path={match.path + '/content'} component={Content} />
