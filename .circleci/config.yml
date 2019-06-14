@@ -79,6 +79,23 @@ jobs:
           cp -r public/lib build
           ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
 
+  publish/beta:
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - *attach_workspace
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Copy package and readme
+          command: cp package.json public/lib/ && cp README.md public/lib/
+      - run:
+          name: Publish package
+          command: npm publish public/lib --tag beta --access public
+
   publish:
     working_directory: *workspace_root
     docker:
@@ -121,6 +138,14 @@ workflows:
             - lint
             - lib/build
             - build
+          filters:
+            branches:
+              only: master
+      - publish/beta:
+          context: npm-org
+          requires:
+            - lib/build
+            - lint
           filters:
             branches:
               only: master
