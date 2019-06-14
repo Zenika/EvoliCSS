@@ -1,0 +1,94 @@
+$colorsAccordion: (
+  primary: $primary,
+  link: $link,
+  info: $info,
+  success: $success,
+  warning: $warning,
+  danger: $danger
+);
+
+.accordions {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordion {
+  width: 100%;
+  overflow: hidden;
+  color: $black;
+  background: $white;
+  .accordion-label:hover,
+  input:checked + .accordion-label {
+    &::after {
+      transform: rotate(90deg);
+    }
+    background: darken($white, $darkness-light);
+  }
+
+  @each $colorsKey, $color in $colorsAccordion {
+    &.is-#{$colorsKey} {
+      color: white;
+      background: $color;
+      .accordion-label:hover,
+      input:checked + .accordion-label {
+        background: darken($color, $darkness-light);
+      }
+    }
+  }
+
+  .accordion-content {
+    color: $black;
+    background: $white;
+  }
+  &.is-border {
+    border-left: solid 0.5em $black;
+    @each $colorsKey, $color in $colorsAccordion {
+      &-#{$colorsKey} {
+        border-left: solid 0.5em $color;
+      }
+    }
+  }
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    background: white;
+    transition: all 0.35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    cursor: pointer;
+  }
+}
+
+// :checked
+.accordion input:checked {
+  ~ .accordion-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+
+.accordion-close {
+  color: $white;
+  background: $info;
+  &:hover {
+    background: darken($info, $darkness-light);
+  }
+}

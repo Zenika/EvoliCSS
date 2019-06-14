@@ -62,6 +62,9 @@ const Sidebar = () => (
           <Link to="/element">Element</Link>
           <ul className="list">
             <li>
+              <Link to="/element/accordion">Accordion</Link>
+            </li>
+            <li>
               <Link to="/element/box">Box</Link>
             </li>
             <li>
