@@ -29,7 +29,7 @@ $colorsAccordion: (
     &::after {
       transform: rotate(90deg);
     }
-    background: darken($white, 10%);
+    background: darken($white, $darkness-light);
   }
 
   @each $colorsKey, $color in $colorsAccordion {
@@ -38,7 +38,7 @@ $colorsAccordion: (
       background: $color;
       .accordion-label:hover,
       input:checked + .accordion-label {
-        background: darken($color, 10%);
+        background: darken($color, $darkness-light);
       }
     }
   }
@@ -89,6 +89,6 @@ $colorsAccordion: (
   color: $white;
   background: $info;
   &:hover {
-    background: darken($info, 10%);
+    background: darken($info, $darkness-light);
   }
 }
