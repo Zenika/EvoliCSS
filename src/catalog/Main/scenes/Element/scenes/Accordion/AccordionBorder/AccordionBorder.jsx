@@ -14,7 +14,7 @@ const AccordionBorder = () => (
             key={color}
             className={cn('accordion', color !== 'default' ? 'is-border-' + color : 'is-border')}
           >
-            <input type="checkbox" id={color} />
+            <input className="accordion-input" type="checkbox" id={color} />
             <label className="accordion-label" htmlFor={color}>
               Border {color}
             </label>

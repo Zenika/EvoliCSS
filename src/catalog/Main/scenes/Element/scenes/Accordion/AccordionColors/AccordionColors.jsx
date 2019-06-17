@@ -11,7 +11,7 @@ const AccordionColors = () => (
       <div className="accordions">
         {colors.map(color => (
           <div key={color} className={cn('accordion', color !== 'default' ? 'is-' + color : null)}>
-            <input type="checkbox" id={color} />
+            <input className="accordion-input" type="checkbox" id={color} />
             <label className="accordion-label" htmlFor={color}>
               {color}
             </label>
