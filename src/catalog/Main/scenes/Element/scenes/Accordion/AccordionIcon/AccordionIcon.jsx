@@ -7,7 +7,7 @@ const AccordionIcon = () => (
     <Sandbox>
       <div className="accordions">
         <div className="accordion is-primary">
-          <input type="checkbox" id="chck1" />
+          <input className="accordion-input" type="checkbox" id="chck1" />
           <label className="accordion-label" htmlFor="chck1">
             Section 1
             <i className="fas fa-check" />
@@ -17,7 +17,7 @@ const AccordionIcon = () => (
           </div>
         </div>
         <div className="accordion is-primary">
-          <input type="checkbox" id="chck2" />
+          <input className="accordion-input" type="checkbox" id="chck2" />
           <label className="accordion-label" htmlFor="chck2">
             Section 2
             <i className="far fa-hourglass" />
