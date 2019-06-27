@@ -9,6 +9,7 @@ const Icon = () => (
   <div>
     <h2>Icon</h2>
     <Figma nodeId="4%253A176" />
+    Font Awesome needs to be installed for icons to work.
     <IconNormal />
     <IconColors />
     <IconSizes />
